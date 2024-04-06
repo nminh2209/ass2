@@ -1,21 +1,25 @@
 <?php
 
 include "settings.php";
+include "sanitise.php";
 
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate and sanitize input data
-    $jobReferenceNumber = $_POST["job_reference_number"];
-    $firstName = $_POST["fname"];
-    $lastName = $_POST["lname"];
-    $streetAddress = $_POST["address"];
-    $suburbTown = $_POST["suburb"];
-    $state = $_POST["state"];
-    $postcode = $_POST["postcode"];
-    $emailAddress = $_POST["email"];
-    $phoneNumber = $_POST["phone"];
+    $jobReferenceNumber = sanitise_input($_POST["job_reference_number"]);
+    $firstName = sanitise_input($_POST["fname"]);
+    $lastName = sanitise_input($_POST["lname"]);
+    $streetAddress = sanitise_input($_POST["address"]);
+    $suburbTown = sanitise_input($_POST["suburb"]);
+    $state = sanitise_input($_POST["state"]);
+    $postcode = sanitise_input($_POST["postcode"]);
+    $emailAddress = sanitise_input($_POST["email"]);
+    $phoneNumber = sanitise_input($_POST["phone"]);
     $skills = isset($_POST["skills"]) ? $_POST["skills"] : array();
-    $otherSkills = $_POST["otherdesc"];
+    $otherSkills = sanitise_input($_POST["otherdesc"]);
+
+    // Concatenate skills array into a string
+    $skillsString = sanitise_input(implode(", ", $skills));
 
     // Server-side validation
     $errors = array();
@@ -46,17 +50,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
 
             // Prepare and bind the SQL statement
-            $stmt = $conn->prepare("INSERT INTO eoi (JobReferenceNumber, FirstName, LastName, StreetAddress, Suburb/Town, 
+            $stmt = $conn->prepare("INSERT INTO eoi (JobReferenceNumber, FirstName, LastName, StreetAddress, `Suburb/Town`, 
             State, Postcode, EmailAddress, PhoneNumber, Skills, OtherSkills) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
             $stmt->bind_param("sssssssssss", $jobReferenceNumber, $firstName, $lastName, $streetAddress, $suburbTown, $state, $postcode, $emailAddress, $phoneNumber, $skillsString, $otherSkills);
-
-            // Concatenate skills array into a string
-            $skillsString = implode(", ", $skills);
 
             // Execute the statement
             $stmt->execute();
 
             echo "A new record has been inserted successfully.";
+            header("Location: index.php");
 
             $stmt->close();
             $conn->close();
