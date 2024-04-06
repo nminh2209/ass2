@@ -13,7 +13,7 @@
 </head>
 
 <body class="bodycuaan">
-  <!-- <?php include 'header.inc'; ?> -->
+  <?php include 'header.inc'; ?>
 
   <div class="container">
     <div class="center yellow form-box">
@@ -39,9 +39,9 @@
 
             <fieldset class="pad30">
               <legend>Gender:</legend>
-              <input name="gender" id="gender1" value="male" type="radio" required />
+              <input name="gender" id="gender" value="male" type="radio" required />
               <label for="gender1">Male</label>
-              <input name="gender" id="gender2" value="female" type="radio" />
+              <input name="gender" id="gender" value="female" type="radio" />
               <label for="gender2">Female</label>
             </fieldset>
 

@@ -9,14 +9,13 @@
             <li><a href="about.php">ABOUT</a></li>
             <li><a href="enhancements.php">ENHANCEMENTS</a></li>
             <li><a href="#">CONTACT US</a>
+            <li><a href = "login.php">LOGIN</a></li>
                 <ul class="dropdown">
                     <li><a href="mailto:">Doan Phuong Anh Tuan</a></li>
                     <li><a href="mailto:">Nguyen Hoang Minh</a></li>
                     <li><a href="mailto:">Le Gia Hoang An</a></li>
                 </ul>
             </li>
-            <li><a href = "manage.php">MANAGE</a></li>
-            <li><a href = "login.php">LOGIN</a></li>
         </ul>
     </nav>
 </header>

@@ -9,6 +9,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $jobReferenceNumber = sanitise_input($_POST["job_reference_number"]);
     $firstName = sanitise_input($_POST["fname"]);
     $lastName = sanitise_input($_POST["lname"]);
+    $dateofbirth = sanitise_input($_POST["dob"]);
+    $gender = sanitise_input($_POST["gender"]);
     $streetAddress = sanitise_input($_POST["address"]);
     $suburbTown = sanitise_input($_POST["suburb"]);
     $state = sanitise_input($_POST["state"]);
@@ -50,9 +52,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
 
             // Prepare and bind the SQL statement
-            $stmt = $conn->prepare("INSERT INTO eoi (JobReferenceNumber, FirstName, LastName, StreetAddress, `Suburb/Town`, 
-            State, Postcode, EmailAddress, PhoneNumber, Skills, OtherSkills) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-            $stmt->bind_param("sssssssssss", $jobReferenceNumber, $firstName, $lastName, $streetAddress, $suburbTown, $state, $postcode, $emailAddress, $phoneNumber, $skillsString, $otherSkills);
+            $stmt = $conn->prepare("INSERT INTO eoi (JobReferenceNumber, FirstName, LastName, DateOfBirth, Gender, StreetAddress, `Suburb/Town`, 
+            State, Postcode, EmailAddress, PhoneNumber, Skills, OtherSkills) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+            $stmt->bind_param("sssssssssssss", $jobReferenceNumber, $firstName, $lastName, $dateofbirth, $gender, $streetAddress, $suburbTown, $state, $postcode, $emailAddress, $phoneNumber, $skillsString, $otherSkills);
 
             // Execute the statement
             $stmt->execute();
