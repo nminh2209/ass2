@@ -10,13 +10,13 @@
     <title>AMT Technologies</title>
 </head>
 <body class="bodycuaan">
-    <?php include 'header.inc'; ?>  
+    <?php include 'header.inc'; ?> 
 
     <div id="container-cuaan">
         <div class="section-cuaan">
             <div id="topPhrase">
-              <a class="ytbdemo" href="https://youtu.be/c-rvNyI2DMg" title="YouTubeDemonstration">Propel Your Tech Career to New Heights at AMT Technologies 
-              </a>
+            <a class="ytbdemo" href="https://www.youtube.com/watch?v=azdFulLFmeA" title="YouTubeDemonstration">Video Assignment 2</a> <br/>
+              <a class="ytbdemo" href="https://youtu.be/c-rvNyI2DMg" title="YouTubeDemonstration">Propel Your Tech Career to New Heights at AMT Technologies </a>
             </div>  
         </div>
 

@@ -136,3 +136,12 @@
 </body>
 
 </html>
+
+<!-- Acknowledgement:
+
+Image sources : 
+https://universityhq.org/how-to-become/database-engineer-careers/
+https://universityhq.org/how-to-become/database-engineer-careers/
+https://hris.emsc.vn/en/nhiem-vu-cua-hr-manager-la-gi-2/ 
+
+ --! >
