@@ -18,7 +18,7 @@
   padding: 1vw;
 }
 
-.menu{
+.menu {
   display: inline-block;
   padding-top: 1vw;
   padding-bottom: 1vw;
@@ -35,139 +35,168 @@
   font-size: 1vw;
   color: white;
   text-decoration: none;
-  
+
 }
 
 .menu li a:hover {
   color: gray;
-  transition: text-shadow 0.3s ease; /* Apply transition only to the text */
-  text-shadow:  2px 2px  aqua; /* Adjust the values as needed */
+  transition: text-shadow 0.3s ease;
+  /* Apply transition only to the text */
+  text-shadow: 2px 2px aqua;
+  /* Adjust the values as needed */
 }
 
-.logo{
+.logo {
   width: 7vw;
 }
 
-.brand{
+.brand {
   margin-right: auto;
   padding-left: 1vw;
 }
 
-.dropdown{
+.dropdown {
   position: absolute;
   background-color: black;
   display: none;
   list-style: none;
   margin: 0;
   padding: 0;
-  z-index: 1; /* Set a higher z-index value */
+  z-index: 1;
+  /* Set a higher z-index value */
 }
 
-.menu li:hover > .dropdown{
+.menu li:hover>.dropdown {
   display: block;
 }
 
-.dropdown li{
+.dropdown li {
   display: block;
 }
 
-.dropdown li a{
+.dropdown li a {
   display: block;
-  padding: 1vw; /* Use viewport width for padding */
+  padding: 1vw;
+  /* Use viewport width for padding */
   color: white;
   text-decoration: none;
   text-align: left;
-  
+
 }
 
-.dropdown li:hover > a {
+.dropdown li:hover>a {
   color: gray;
 }
 
-.anhmaymoc{
+.anhmaymoc {
   width: 100%;
-  height: auto; /* Allow height to adjust proportionally */
-  max-height: 100%; /* Use viewport height for maximum height */
+  height: auto;
+  /* Allow height to adjust proportionally */
+  max-height: 100%;
+  /* Use viewport height for maximum height */
 }
 
-#MTT{
+#MTT {
   text-align: center;
   color: gray;
-  font-size: 5vw; /* Use viewport width for font size */
-}
-#MTT:hover{
-  transition: transform 0.3s ease; /* Add transition effect for smooth animation */
-  transform: translateY(-5px); /* Move the text upward by 5 pixels */
-  transition: text-shadow 0.3s ease;
-  text-shadow:  2px 2px aqua; /* Adjust the values as needed */
+  font-size: 5vw;
+  /* Use viewport width for font size */
 }
 
-.container-grpin4{
+#MTT:hover {
+  transition: transform 0.3s ease;
+  /* Add transition effect for smooth animation */
+  transform: translateY(-5px);
+  /* Move the text upward by 5 pixels */
+  transition: text-shadow 0.3s ease;
+  text-shadow: 2px 2px aqua;
+  /* Adjust the values as needed */
+}
+
+.container-grpin4 {
   background-color: black;
   font-size: 1vw;
   display: grid;
   grid-template-columns: auto auto;
 }
 
-.group-info{
-  grid-column: 1 / 2; /* Ensure .group-info occupies the first column */
+.group-info {
+  grid-column: 1 / 2;
+  /* Ensure .group-info occupies the first column */
 }
 
-.anhnhom{
-  grid-column: 2 / 3; /* Ensure .anhnhom occupies the second column */
+.anhnhom {
+  grid-column: 2 / 3;
+  /* Ensure .anhnhom occupies the second column */
 }
 
 
 .group-info {
   display: grid;
-  gap: 1vw; /* Add some gap between grid items */
-  padding: 5vw; /* Adjust padding for better spacing */
+  gap: 1vw;
+  /* Add some gap between grid items */
+  padding: 5vw;
+  /* Adjust padding for better spacing */
 }
 
 .group-info dt {
-  grid-column: 1; /* Ensure <dt> occupies the first column */
-  font-weight: bold; /* Make <dt> text bold */
+  grid-column: 1;
+  /* Ensure <dt> occupies the first column */
+  font-weight: bold;
+  /* Make <dt> text bold */
 }
 
 .group-info dd {
-  grid-column: 2; /* Ensure <dd> occupies the second column */
-  text-align: left; /* Adjust text alignment as needed */
-  word-wrap: break-word; /* Allow long words to break and wrap onto the next line */
-  max-width: 50%; /* Set the maximum width of the grid cell */
+  grid-column: 2;
+  /* Ensure <dd> occupies the second column */
+  text-align: left;
+  /* Adjust text alignment as needed */
+  word-wrap: break-word;
+  /* Allow long words to break and wrap onto the next line */
+  max-width: 50%;
+  /* Set the maximum width of the grid cell */
 }
 
 .group-info {
-  transition: box-shadow 0.2s ease; /* Add transition effect for smoother hover */
-  border-radius: 10px; /* Add rounded corners for a softer look */
+  transition: box-shadow 0.2s ease;
+  /* Add transition effect for smoother hover */
+  border-radius: 10px;
+  /* Add rounded corners for a softer look */
 }
 
 .group-info:hover {
   transition: box-shadow 0.1s ease;
-  box-shadow: 0 10px 20px gray; /* Adjust the values as needed */
+  box-shadow: 0 10px 20px gray;
+  /* Adjust the values as needed */
 }
 
-.group-info dt, .group-info dd {
-  color: white; /* Adjust text color for better contrast */
+.group-info dt,
+.group-info dd {
+  color: white;
+  /* Adjust text color for better contrast */
 }
 
-.group-info dd:hover{
-  transition: transform 0.3s ease; /* Add transition effect for smooth animation */
-  transform: translateY(-5px); /* Move the text upward by 5 pixels */
+.group-info dd:hover {
+  transition: transform 0.3s ease;
+  /* Add transition effect for smooth animation */
+  transform: translateY(-5px);
+  /* Move the text upward by 5 pixels */
   transition: text-shadow 0.3s ease;
-  text-shadow:  2px 2px aqua; /* Adjust the values as needed */
+  text-shadow: 2px 2px aqua;
+  /* Adjust the values as needed */
 }
 
-.anhnhom img{
+.anhnhom img {
   width: 100%;
   height: auto;
 }
 
-.anhnhom figcaption{
+.anhnhom figcaption {
   color: aqua;
   text-align: center;
 }
 
-.anhnhom{
+.anhnhom {
   position: relative;
   display: inline-block;
 }
@@ -178,7 +207,8 @@ figcaption {
   left: 0;
   width: 100%;
   color: white;
-  padding: 12vw; /* Adjust padding as needed */
+  padding: 12vw;
+  /* Adjust padding as needed */
   text-align: center;
   box-sizing: border-box;
   display: none;
@@ -188,56 +218,68 @@ figure:hover figcaption {
   display: block;
 }
 
-.anhnhom:hover img{
+.anhnhom:hover img {
   transition: box-shadow 0.1s ease;
-  box-shadow: 0 10px 20px gray; /* Adjust the values as needed */
+  box-shadow: 0 10px 20px gray;
+  /* Adjust the values as needed */
   filter: blur(0.5vw);
-  transition: filter 0.1s ease; /* Apply transition to the filter property */
+  transition: filter 0.1s ease;
+  /* Apply transition to the filter property */
 }
 
-.Table{
+.Table {
   overflow-x: auto;
   margin: 20px;
 }
 
-.Table td:hover{
-  
+.Table td:hover {
+
   transition: text-shadow 0.3s ease;
-  text-shadow:  2px 2px aqua; /* Adjust the values as needed */
+  text-shadow: 2px 2px aqua;
+  /* Adjust the values as needed */
   transition: box-shadow 0.1s ease;
-  box-shadow: 0 10px 20px #808080; /* Adjust the values as needed */
+  box-shadow: 0 10px 20px #808080;
+  /* Adjust the values as needed */
 }
 
-.Table th:hover{
+.Table th:hover {
   transition: text-shadow 0.3s ease;
-  text-shadow:  2px 2px aqua; /* Adjust the values as needed */
+  text-shadow: 2px 2px aqua;
+  /* Adjust the values as needed */
   transition: box-shadow 0.1s ease;
-  box-shadow: 0 10px 20px #808080; /* Adjust the values as needed */
+  box-shadow: 0 10px 20px #808080;
+  /* Adjust the values as needed */
 }
 
 .Table table {
   border-collapse: collapse;
-  width: 100%; /* Make the table responsive */
+  width: 100%;
+  /* Make the table responsive */
 }
 
 .Table caption {
   font-weight: bold;
   margin-bottom: 2vw;
-  font-size: 1.5vw; /* Adjust font size for responsiveness */
-  color: #808080; /* Customize caption color */
+  font-size: 1.5vw;
+  /* Adjust font size for responsiveness */
+  color: #808080;
+  /* Customize caption color */
 }
 
-.Table th,.Table td {
+.Table th,
+.Table td {
   background-color: white;
   border: 1px solid #ddd;
-  padding: 2vw; /* Use viewport width for padding */
+  padding: 2vw;
+  /* Use viewport width for padding */
   text-align: center;
   font-size: 1vw;
 }
 
 .Table th {
-  color: black ;
-  background-color: white; /* Add background color for header cells */
+  color: black;
+  background-color: white;
+  /* Add background color for header cells */
 }
 
 footer {
@@ -250,12 +292,12 @@ footer {
   font-size: 1vw;
 }
 
-.anhnhom2{
+.anhnhom2 {
   width: 100%;
   height: auto;
 }
 
-.feedback{
+.feedback {
   display: block;
   text-align: center;
   margin-top: 5vw;
@@ -265,39 +307,48 @@ footer {
 }
 
 
-.feedback p{
-color: grey;
+.feedback p {
+  color: grey;
 }
 
-.feedback p:hover{
-  transition: transform 0.3s ease; /* Add transition effect for smooth animation */
-  transform: translateY(-5px); /* Move the text upward by 5 pixels */
+.feedback p:hover {
+  transition: transform 0.3s ease;
+  /* Add transition effect for smooth animation */
+  transform: translateY(-5px);
+  /* Move the text upward by 5 pixels */
   transition: text-shadow 0.3s ease;
-  text-shadow:  2px 2px aqua; /* Adjust the values as needed */
+  text-shadow: 2px 2px aqua;
+  /* Adjust the values as needed */
 }
 
-.feedback h1:hover{
-  transition: transform 0.3s ease; /* Add transition effect for smooth animation */
-  transform: translateY(-5px); /* Move the text upward by 5 pixels */
+.feedback h1:hover {
+  transition: transform 0.3s ease;
+  /* Add transition effect for smooth animation */
+  transform: translateY(-5px);
+  /* Move the text upward by 5 pixels */
   transition: text-shadow 0.3s ease;
-  text-shadow:  2px 2px aqua; /* Adjust the values as needed */
+  text-shadow: 2px 2px aqua;
+  /* Adjust the values as needed */
 }
 
 
-#SayingAboutUs{
+#SayingAboutUs {
   color: gray;
-  font-size: 2vw; /* Use viewport width for font size */
+  font-size: 2vw;
+  /* Use viewport width for font size */
 }
 
 .container-cuatuan {
   background-color: white;
   max-width: 104rem;
-  margin: 0 auto ;
+  margin: 0 auto;
   padding: 0rem 1.5rem;
 }
+
 .section-cuatuan {
   margin-top: 5rem;
 }
+
 .section_header-cuatuan {
   width: 100%;
   display: flex;
@@ -312,10 +363,12 @@ color: grey;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 4rem;
 }
+
 .featured-card-cuatuan {
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
 }
+
 .featured-img-cuatuan {
   width: 100%;
   height: 10rem;
@@ -323,9 +376,11 @@ color: grey;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
 }
+
 .card-body-cuatuan {
   padding: 2rem;
 }
+
 .featured-p-cuatuan {
   margin-bottom: 1rem;
 }
@@ -342,67 +397,73 @@ color: grey;
   cursor: pointer;
 }
 
-.featured-card-cuatuan:hover{
-  transition: transform 0.3s ease; /* Add transition effect for smooth animation */
-  transform: translateY(-5px); /* Move the text upward by 5 pixels */
+.featured-card-cuatuan:hover {
+  transition: transform 0.3s ease;
+  /* Add transition effect for smooth animation */
+  transform: translateY(-5px);
+  /* Move the text upward by 5 pixels */
   transition: box-shadow 0.1s ease;
-  box-shadow: 5px 5px 5px aqua; 
+  box-shadow: 5px 5px 5px aqua;
 }
 
-.featured-btn-cuatuan:hover{
-  transition: transform 0.3s ease; /* Add transition effect for smooth animation */
-  transform: translateY(-5px); /* Move the text upward by 5 pixels */
+.featured-btn-cuatuan:hover {
+  transition: transform 0.3s ease;
+  /* Add transition effect for smooth animation */
+  transform: translateY(-5px);
+  /* Move the text upward by 5 pixels */
   transition: box-shadow 0.3s ease;
-  box-shadow: 5px 5px 5px aqua; 
+  box-shadow: 5px 5px 5px aqua;
 }
 
 /*index.html Le Gia Hoang An*/
 
-.bodycuaan{
+.bodycuaan {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
   box-sizing: border-box;
 }
 
-#container-cuaan{
- position: relative;
+#container-cuaan {
+  position: relative;
 }
 
-.ytbdemo{
+.ytbdemo {
   color: grey;
   text-decoration: none;
 }
 
-.ytbdemo:hover{
+.ytbdemo:hover {
   color: gray;
-  transition: text-shadow 0.3s ease; /* Apply transition only to the text */
-  text-shadow:  2px 2px  aqua; /* Adjust the values as needed */
+  transition: text-shadow 0.3s ease;
+  /* Apply transition only to the text */
+  text-shadow: 2px 2px aqua;
+  /* Adjust the values as needed */
 }
 
-.section-cuaan{
+.section-cuaan {
   border: solid black 3px;
 }
 
-#topPhrase{
-    background-image: url("images/ITteam.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    height: auto;
-    text-align: center;
-    font-weight: bold;
-    font-size: 3vw;
-    padding-top: 300px;
-    padding-bottom: 300px;
-    color: gray;
-    text-shadow: 4px 4px 6px #000000;
-  }
+#topPhrase {
+  background-image: url("images/ITteam.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3vw;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  color: gray;
+  text-shadow: 4px 4px 6px #000000;
+}
 
 
-  
 
 
-.midsect{
+
+.midsect {
   text-align: center;
   font-size: 30px;
   padding: 50px 200px 150px;
@@ -410,50 +471,50 @@ color: grey;
 
 
 
-.sect{
+.sect {
   padding: 50px 300px 200px;
   font-size: 30px;
   display: flex;
   justify-content: space-between;
 }
 
-.blue{
+.blue {
   background-color: grey;
   color: white;
 }
 
-.yellow{
-  background-color:antiquewhite;
+.yellow {
+  background-color: antiquewhite;
   color: #333
 }
 
-.sect ul{
+.sect ul {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.sect ul li{
+.sect ul li {
   padding: 20px;
 }
 
-.subtitle{
+.subtitle {
   padding-bottom: 50px;
   font-size: 50px;
-  color:black;
+  color: black;
   text-align: center;
   padding-top: 100px;
 }
 
-.rightIMG{
+.rightIMG {
   height: 408px;
   width: 612px;
   margin-right: 80px;
   margin-top: 60px;
 }
 
-.bold-catch{
+.bold-catch {
   font-size: 60px;
-  color:darksalmon;
+  color: darksalmon;
   padding-top: 5px;
   padding-bottom: 50px;
 }
@@ -467,14 +528,14 @@ color: grey;
   color: navy
 }
 
-.minilogo{
+.minilogo {
   border-radius: 4px;
   padding: 5px;
   width: 150px;
   text-align: center;
 }
 
-.foot{
+.foot {
   align-items: center;
   position: relative;
   width: 100%;
@@ -486,11 +547,11 @@ color: grey;
 
 
 
-#otherskills[type=checkbox]:checked ~ #otherdesc{
+#otherskills[type=checkbox]:checked~#otherdesc {
   display: block;
 }
 
-.center{
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -505,14 +566,14 @@ color: grey;
   width: 45%;
 }
 
-.form-box{
+.form-box {
   padding-top: 100px;
   padding-bottom: 100px;
   color: black;
   width: 100%;
 }
 
-.pad30{
+.pad30 {
   padding: 30px;
 }
 
@@ -525,9 +586,9 @@ color: grey;
   text-align: center;
 }
 
-.button-container{
+.button-container {
   padding-left: 80px;
-  margin-left: 15 0px;   
+  margin-left: 15 0px;
 }
 
 form button {
@@ -542,22 +603,26 @@ form button {
 
 .container-cuaminh {
   max-width: 104rem;
-  margin: 0 auto ;
+  margin: 0 auto;
   padding: 2rem 1.5rem;
 }
+
 .section-cuaan {
   margin-top: 3rem;
 }
+
 .section_header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .section_header_link {
   color: #333;
   text-decoration: none;
 }
+
 .features {
   margin-top: 2rem;
   width: 100%;
@@ -565,11 +630,13 @@ form button {
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 4rem;
 }
+
 .featured_card {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
 }
+
 .featured_img {
   width: 100%;
   height: 10rem;
@@ -577,20 +644,25 @@ form button {
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
 }
+
 .card_body {
   padding: 2rem;
 }
+
 .featured_p {
   margin-bottom: 1rem;
 }
+
 .featured_icon_box {
   margin-top: 0.5rem;
   display: flex;
   align-items: center;
 }
+
 .featured_icon {
   margin-right: 1rem;
 }
+
 .featured_btn {
   margin-top: 2rem;
   width: 100%;
@@ -603,36 +675,40 @@ form button {
   cursor: pointer;
 }
 
-.featured_card:hover{
-  transition: transform 0.3s ease; /* Add transition effect for smooth animation */
-  transform: translateY(-5px); /* Move the text upward by 5 pixels */
+.featured_card:hover {
+  transition: transform 0.3s ease;
+  /* Add transition effect for smooth animation */
+  transform: translateY(-5px);
+  /* Move the text upward by 5 pixels */
   transition: box-shadow 0.1s ease;
-  box-shadow: 5px 5px 5px aqua; 
+  box-shadow: 5px 5px 5px aqua;
 }
 
-.featured_btn:hover{
-  transition: transform 0.3s ease; /* Add transition effect for smooth animation */
-  transform: translateY(-5px); /* Move the text upward by 5 pixels */
+.featured_btn:hover {
+  transition: transform 0.3s ease;
+  /* Add transition effect for smooth animation */
+  transform: translateY(-5px);
+  /* Move the text upward by 5 pixels */
   transition: box-shadow 0.1s ease;
-  box-shadow: 5px 5px 5px aqua; 
+  box-shadow: 5px 5px 5px aqua;
 }
 
 @media screen and (max-width: 1200px) {
-  .rightIMG{
+  .rightIMG {
     display: none;
   }
 
-  .sect{
-    padding: 0px 330px ;
+  .sect {
+    padding: 0px 330px;
     font-size: 25px;
   }
 
-  .midsect{
+  .midsect {
     padding: 50px 65px 120px;
     font-size: 25px;
   }
 
-  #topPhrase{
+  #topPhrase {
     background-image: url("images/ITteam.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -648,18 +724,18 @@ form button {
 }
 
 @media screen and (max-width: 800px) {
-  .sect{
-    padding: 0px 120px ;
+  .sect {
+    padding: 0px 120px;
     font-size: 25px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .sect{
-    padding: 0px 45px ;
+  .sect {
+    padding: 0px 45px;
   }
 
-  .midsect{
+  .midsect {
     padding: 50px 45px 100px;
     font-size: 20px;
   }
@@ -679,7 +755,7 @@ form button {
 
 
 .section-cm2 {
-  padding:100px;
+  padding: 100px;
 }
 
 .article-cm {
@@ -692,27 +768,28 @@ form button {
 }
 
 .h1cm {
-  
-  display: inline-block ;
+
+  display: inline-block;
   border: 2px solid darkgray;
   border-radius: 5px;
   padding: 5px;
-  font-variant: normal; 
-  font-size: 2em; 
-  font-family: sans-serif; 
+  font-variant: normal;
+  font-size: 2em;
+  font-family: sans-serif;
 }
 
-.h1cm,.h3cm {
+.h1cm,
+.h3cm {
   color: black;
 }
 
 .ul-cm {
-  list-style-type: square ;
+  list-style-type: square;
   padding: 10;
 }
 
-.ul-cm .li-cm::marker{
-  color:black ;
+.ul-cm .li-cm::marker {
+  color: black;
 }
 
 
@@ -740,26 +817,28 @@ footer {
 
 
 .apn {
-  background-color: black; 
+  background-color: black;
   border: black;
   color: white;
   padding: 20px 32px;
   text-align: center;
   text-decoration: none;
-  display: block  ;
+  display: block;
   font-size: 30px;
 
 }
 
-.apn:hover{
-  transition: transform 0.3s ease; /* Add transition effect for smooth animation */
-  transform: translateY(-5px); /* Move the text upward by 5 pixels */
+.apn:hover {
+  transition: transform 0.3s ease;
+  /* Add transition effect for smooth animation */
+  transform: translateY(-5px);
+  /* Move the text upward by 5 pixels */
   transition: box-shadow 0.1s ease;
-  box-shadow: 5px 5px 5px aqua; 
+  box-shadow: 5px 5px 5px aqua;
 }
 
-.adb{
-  float:right;
+.adb {
+  float: right;
   width: 100%;
   height: 10rem;
   object-fit: cover;
@@ -768,8 +847,8 @@ footer {
 
 }
 
-.afs{
-float:right;
+.afs {
+  float: right;
   width: 100%;
   height: 10rem;
   object-fit: cover;
@@ -777,25 +856,29 @@ float:right;
   border-top-left-radius: 1rem;
 }
 
-.ahr{
-float:right;
+.ahr {
+  float: right;
   width: 100%;
   height: 10rem;
   object-fit: cover;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
 }
+
 /*jobs.html*/
 
 
 /*enhancements*/
 
-.penhan:hover{
-  transition: transform 0.3s ease; /* Add transition effect for smooth animation */
-transform: translateY(-5px); /* Move the text upward by 5 pixels */
-transition: text-shadow 0.3s ease;
-text-shadow:  2px 2px aqua; 
+.penhan:hover {
+  transition: transform 0.3s ease;
+  /* Add transition effect for smooth animation */
+  transform: translateY(-5px);
+  /* Move the text upward by 5 pixels */
+  transition: text-shadow 0.3s ease;
+  text-shadow: 2px 2px aqua;
 }
+
 
 /*newaddedcssforloginandmange*/
 
@@ -824,13 +907,13 @@ text-shadow:  2px 2px aqua;
 .loginform select {
   border-radius: 0.5vw;
   height: 2vw;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease, font-size 0.3s ease; 
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, font-size 0.3s ease;
 }
 
 .loginform input[type="text"]:focus,
 .loginform input[type="password"]:focus,
 .loginform select:focus {
-  font-size: 1.2vw; 
+  font-size: 1.2vw;
 }
 
 .loginbutton {
@@ -838,14 +921,13 @@ text-shadow:  2px 2px aqua;
   width: 8vw;
   height: 3vw;
   margin: auto;
-  margin-top: 2vw;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
   font-size: 0.8vw;
-  background-color: black;    
+  background-color: black;
   color: white;
   border-radius: 0.5vw;
   box-shadow: inset 0 0 0 0 blue;
@@ -855,7 +937,15 @@ text-shadow:  2px 2px aqua;
 .loginbutton:hover {
   box-shadow: inset 200px 0 0 0 aqua;
   color: white;
+}
 
+.loginbutton a:hover {
+  color: black;
+}
+
+.loginbutton a {
+  color: white;
+  text-decoration: none;
 }
 
 .invalidpassoremail {
@@ -863,3 +953,35 @@ text-shadow:  2px 2px aqua;
 }
 
 /*newaddedcssforloginandmange*/
+
+.wcmanager {
+  text-align: center;
+}
+
+.wcmanagerloginbutton {
+  margin: 5vw;
+}
+
+.minhmanage {
+  border-radius: 1vw;
+  color: white;
+  margin: 2vw;
+  background-image: url("images/anhmaymoc.jpg");
+}
+
+.EOISdiv {
+
+  margin: 2vw;
+}
+
+.minhmanage input[type="text"],
+.minhmanage select {
+  border-radius: 0.5vw;
+  height: 1.2vw;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, font-size 0.3s ease;
+}
+
+.minhmanage input[type="text"]:focus,
+.minhmanage select:focus {
+  font-size: 1vw;
+}

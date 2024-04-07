@@ -19,31 +19,27 @@
   function generateSortFieldDropdown()
   {
     $columns = [
-      'eoi_number' => 'EOI Number',
-      'job_reference_number' => 'Job Reference Number',
-      'first_name' => 'First Name',
-      'last_name' => 'Last Name',
-      'gender' => 'Gender',
-      'street_address' => 'Street Address',
-      'suburb_town' => '`Suburb/Town`',
-      'state' => 'State',
-      'postcode' => 'Postcode',
-      'email_address' => 'Email Address',
-      'phone_number' => 'Phone Number',
-      'skill_html' => 'HTML Skill',
-      'skill_css' => 'CSS Skill',
-      'skill_javascript' => 'JavaScript Skill',
-      'skill_php' => 'PHP Skill',
-      'skill_mysql' => 'MySQL Skill',
-      'skill_other' => 'Other Skill',
-      'other_skill' => 'Other Skill Description',
-      'status' => 'Status'
+      'EoiNumber' => 'EOI Number',
+      'JobReferenceNumber' => 'Job Reference Number',
+      'FirstName ' => 'First Name',
+      'LastName' => 'Last Name',
+      'Gender' => 'Gender',
+      'StreetAddress' => 'Street Address',
+      '`Suburb/Town`' => 'Suburb/Town',
+      'State' => 'State',
+      'PostCode' => 'Postcode',
+      'EmailAddress' => 'Email Address',
+      'PhoneNumber' => 'Phone Number',
+      'Skills' => 'HTML Skill',
+      'OtherSkills' => 'Other Skills Description',
+      'Status' => 'Status'
+
     ];
 
     $options = '<label for="sort_field">Sort By:</label>';
     $options .= '<select name="sort_field" id="sort_field">';
     foreach ($columns as $key => $value) {
-      $selected = ($key == 'eoi_number') ? 'selected' : '';
+      $selected = ($key == 'EoiNumber') ? 'selected' : '';
       $options .= "<option value=\"$key\" $selected>$value</option>";
     }
     $options .= '</select>';
@@ -56,50 +52,50 @@
       <h1>Human Resources Queries</h1>
       <h4>List all EOIs</h4>
       <form action="processManage.php" method="post">
-        <input type="hidden" name="action" value="listAllEOIs">
+        <input type="hidden" name="action" value="displayAllEOIs">
         <?php generateSortFieldDropdown(); ?>
         <input type="submit" value="List All EOIs">
       </form>
 
       <h4>List EOIs by Job Reference Number</h4>
       <form action="processManage.php" method="post">
-        <input type="hidden" name="action" value="listEOIsByJobRef">
-        <label for="job_reference">Job Reference Number:</label>
-        <input placeholder="Job Reference Number:" type="text" id="job_reference" name="job_reference">
+        <input type="hidden" name="action" value="displayEOIsByReferenceNumber">
+        <label for="jobreference">Job Reference Number:</label>
+        <input placeholder="Job Reference Number:" type="text" id="jobreference" name="jobreference">
         <?php generateSortFieldDropdown(); ?>
         <input type="submit" value="List EOIs">
       </form>
 
       <h4>List EOIs by Applicant Name</h4>
       <form action="processManage.php" method="post">
-        <input type="hidden" name="action" value="listEOIsByApplicantName">
-        <label for="first_name">First Name:</label>
-        <input placeholder="First Name:" type="text" id="first_name" name="first_name">
-        <label for="last_name">Last Name:</label>
-        <input placeholder="Last Name:" type="text" id="last_name" name="last_name">
+        <input type="hidden" name="action" value="displayEOIsByApplicantName">
+        <label for="firstname">First Name:</label>
+        <input placeholder="First Name:" type="text" id="firstname" name="firstname">
+        <label for="lastname">Last Name:</label>
+        <input placeholder="Last Name:" type="text" id="lastname" name="lastname">
         <?php generateSortFieldDropdown(); ?>
         <input type="submit" value="List EOIs">
       </form>
 
       <h4>Delete EOIs by Job Reference Number</h4>
       <form action="processManage.php" method="post">
-        <input type="hidden" name="action" value="deleteEOIsByJobRef">
-        <label for="job_reference_delete">Job Reference Number:</label>
-        <input placeholder="Job Reference Number:" type="text" id="job_reference_delete" name="job_reference">
+        <input type="hidden" name="action" value="deleteEOIsByReferenceNumber">
+        <label for="jobreferencedelete">Job Reference Number:</label>
+        <input placeholder="Job Reference Number:" type="text" id="job_reference_delete" name="jobreferencedelete">
         <input type="submit" value="Delete EOIs">
       </form>
 
       <h4>Change EOI Status</h4>
       <form action="processManage.php" method="post">
-        <input type="hidden" name="action" value="changeEOIStatus">
-        <label for="eoi_id">EOI ID:</label>
-        <input placeholder="EOI ID:" type="text" id="eoi_id" name="eoi_id">
-        <label for="new_status">New Status:</label>
+        <input type="hidden" name="action" value="updateEOIStatus">
+        <label for="eoiid">EOI ID:</label>
+        <input placeholder="EOI ID:" type="text" id="eoiid" name="eoiid">
+        <label for="newstatus">New Status:</label>
 
-        <select name="new_status" id="new_status">
-          <option value="New" selected="selected">New</option>
-          <option value="Current">Current</option>
-          <option value="Final">Final</option>
+        <select name="newstatus" id="newstatus">
+          <option value="InReview" selected="selected">In Review</option>
+          <option value="Accepted">Accepted</option>
+          <option value="Rejected">Rejected</option>
         </select>
 
         <input type="submit" value="Change Status">

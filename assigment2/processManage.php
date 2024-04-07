@@ -21,20 +21,20 @@
 
             // Perform actions based on the submitted action
             switch ($action) {
-                case 'listAllEOIs':
-                    listAllEOIs($conn);
+                case 'displayAllEOIs':
+                    displayAllEOIs($conn);
                     break;
-                case 'listEOIsByJobRef':
-                    listEOIsByJobRef($conn);
+                case 'displayEOIsByReferenceNumber':
+                    displayEOIsByReferenceNumber($conn);
                     break;
-                case 'listEOIsByApplicantName':
-                    listEOIsByApplicantName($conn);
+                case 'displayEOIsByApplicantName':
+                    displayEOIsByApplicantName($conn);
                     break;
-                case 'deleteEOIsByJobRef':
-                    deleteEOIsByJobRef($conn);
+                case 'deleteEOIsByReferenceNumber':
+                    deleteEOIsByReferenceNumber($conn);
                     break;
-                case 'changeEOIStatus':
-                    changeEOIStatus($conn);
+                case 'updateEOIStatus':
+                    updateEOIStatus($conn);
                     break;
                 default:
                     echo "Invalid action.";
@@ -47,7 +47,7 @@
     mysqli_close($conn);
 
     // Function to list all EOIs
-    function listAllEOIs($conn)
+    function displayAllEOIs($conn)
     {
         $query = "SELECT * FROM eoi";
         $result = mysqli_query($conn, $query);
@@ -61,10 +61,10 @@
     }
 
     // Function to list EOIs by Job Reference Number
-    function listEOIsByJobRef($conn)
+    function displayEOIsByReferenceNumber($conn)
     {
-        if (isset($_POST['job_reference'])) {
-            $jobReference = sanitise_input($_POST['job_reference']);
+        if (isset($_POST['jobreference'])) {
+            $jobReference = sanitise_input($_POST['jobreference']);
             $query = "SELECT * FROM eoi WHERE JobReferenceNumber = '$jobReference'";
             $result = mysqli_query($conn, $query);
 
@@ -80,11 +80,11 @@
     }
 
     // Function to list EOIs by Applicant Name
-    function listEOIsByApplicantName($conn)
+    function displayEOIsByApplicantName($conn)
     {
-        if (isset($_POST['first_name']) && isset($_POST['last_name'])) {
-            $firstName = sanitise_input($_POST['first_name']);
-            $lastName = sanitise_input($_POST['last_name']);
+        if (isset($_POST['firstname']) && isset($_POST['lastname'])) {
+            $firstName = sanitise_input($_POST['firstname']);
+            $lastName = sanitise_input($_POST['lastname']);
             $query = "SELECT * FROM eoi WHERE FirstName = '$firstName' OR LastName = '$lastName'";
             $result = mysqli_query($conn, $query);
 
@@ -100,10 +100,10 @@
     }
 
     // Function to delete EOIs by Job Reference Number
-    function deleteEOIsByJobRef($conn)
+    function deleteEOIsByReferenceNumber($conn)
     {
-        if (isset($_POST['job_reference'])) {
-            $jobReference = sanitise_input($_POST['job_reference']);
+        if (isset($_POST['jobreferencedelete'])) {
+            $jobReference = sanitise_input($_POST['jobreferencedelete']);
             $deleteQuery = "DELETE FROM eoi WHERE JobReferenceNumber = '$jobReference'";
             $deleteResult = mysqli_query($conn, $deleteQuery);
             if ($deleteResult) {
@@ -117,11 +117,11 @@
     }
 
     // Function to change EOI Status
-    function changeEOIStatus($conn)
+    function updateEOIStatus($conn)
     {
-        if (isset($_POST['eoi_id']) && isset($_POST['new_status'])) {
-            $eoiID = sanitise_input($_POST['eoi_id']);
-            $newStatus = sanitise_input($_POST['new_status']);
+        if (isset($_POST['eoiid']) && isset($_POST['newstatus'])) {
+            $eoiID = sanitise_input($_POST['eoiid']);
+            $newStatus = sanitise_input($_POST['newstatus']);
             $updateQuery = "UPDATE eoi SET status = '$newStatus' WHERE EOINumber = $eoiID";
             $updateResult = mysqli_query($conn, $updateQuery);
             if ($updateResult) {
@@ -157,7 +157,7 @@
                 echo "<td>{$row['PhoneNumber']}</td>";
                 echo "<td>{$row['Skills']}</td>";
                 echo "<td>{$row['OtherSkills']}</td>";
-                //echo "<td>{$row['status']}</td>";
+                echo "<td>{$row['Status']}</td>";
                 echo "</tr>";
             }
 
