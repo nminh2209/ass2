@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manage EOIs</title>
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body class="bodycuaan">
@@ -36,8 +36,8 @@
 
     ];
 
-    $options = '<label for="sort_field">Sort By:</label>';
-    $options .= '<select name="sort_field" id="sort_field">';
+    $options = '<label for="sortfield">Sort By:</label>';
+    $options .= '<select name="sortfield" id="sortfield">';
     foreach ($columns as $key => $value) {
       $selected = ($key == 'EoiNumber') ? 'selected' : '';
       $options .= "<option value=\"$key\" $selected>$value</option>";
