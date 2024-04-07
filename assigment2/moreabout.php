@@ -88,13 +88,3 @@
 </body>
 
 </html>
-
-
-<!-- Acknowledgement:
-
-Image sources : 
-Elon Musk as Doan Phuong Anh Tuan
-Bill Gates as Nguyen Hoang Minh
-Mark Zuckerberg as Le Hoang Gia An
-
- --! >

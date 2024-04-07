@@ -32,8 +32,8 @@
       'PhoneNumber' => 'Phone Number',
       'Skills' => 'HTML Skill',
       'OtherSkills' => 'Other Skills Description',
+      'ApplyFor' => 'ApplyFor',
       'Status' => 'Status'
-
     ];
 
     $options = '<label for="sortfield">Sort By:</label>';

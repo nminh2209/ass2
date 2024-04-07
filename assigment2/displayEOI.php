@@ -154,6 +154,7 @@
                         <th>Phone Number</th>
                         <th>Skills</th>
                         <th>Other Skill Description</th>
+                        <th>Applying For</th>
                         <th>Status</th>
                     </tr>";
 
@@ -173,6 +174,7 @@
                 echo "<td>{$row['PhoneNumber']}</td>";
                 echo "<td>{$row['Skills']}</td>";
                 echo "<td>{$row['OtherSkills']}</td>";
+                echo "<td>{$row['ApplyFor']}</td>";
                 echo "<td>{$row['Status']}</td>";
                 echo "</tr>";
             }
@@ -191,10 +193,3 @@
 
 
 </html>
-
-<!-- Acknowledgement:
-
-https://stackoverflow.com/questions/4696648/sql-select-statement
-https://stackoverflow.com/questions/1108/how-does-database-indexing-work
-
- --! >

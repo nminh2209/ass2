@@ -106,9 +106,9 @@
               <label for="job">Selected Field:</label>
               <select id="job" name="job" required>
                 <option value="">Please Select</option>
-                <option value="ABC123">Database Engineer</option>
-                <option value="LMN456">Fullstack Developer</option>
-                <option value="XYZ789">HR Director</option>
+                <option value="Database Engineer">Database Engineer</option>
+                <option value="Fullstack Developer">Fullstack Developer</option>
+                <option value="HR Director">HR Director</option>
               </select>
             </fieldset>
           </fieldset>

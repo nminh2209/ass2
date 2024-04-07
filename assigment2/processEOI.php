@@ -19,6 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phoneNumber = sanitise_input($_POST["phone"]);
     $skills = isset($_POST["skills"]) ? $_POST["skills"] : array();
     $otherSkills = sanitise_input($_POST["otherdesc"]);
+    $applyFor = sanitise_input($_POST["job"]);
 
     // Concatenate skills array into a string
     $skillsString = sanitise_input(implode(", ", $skills));
@@ -52,9 +53,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
 
             // Prepare and bind the SQL statement
-            $stmt = $conn->prepare("INSERT INTO eoi (JobReferenceNumber, FirstName, LastName, DateOfBirth, Gender, StreetAddress, `Suburb/Town`, 
-            State, Postcode, EmailAddress, PhoneNumber, Skills, OtherSkills) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-            $stmt->bind_param("sssssssssssss", $jobReferenceNumber, $firstName, $lastName, $dateofbirth, $gender, $streetAddress, $suburbTown, $state, $postcode, $emailAddress, $phoneNumber, $skillsString, $otherSkills);
+            $stmt = $conn->prepare("INSERT INTO eoi (JobReferenceNumber, FirstName, LastName, DateOfBirth, Gender, StreetAddress, 
+            `Suburb/Town`, State, Postcode, EmailAddress, PhoneNumber, Skills, OtherSkills, ApplyFor) 
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+            $stmt->bind_param(
+                "ssssssssssssss",
+                $jobReferenceNumber,
+                $firstName,
+                $lastName,
+                $dateofbirth,
+                $gender,
+                $streetAddress,
+                $suburbTown,
+                $state,
+                $postcode,
+                $emailAddress,
+                $phoneNumber,
+                $skillsString,
+                $otherSkills,
+                $applyFor
+            );
+
 
             // Execute the statement
             $stmt->execute();
@@ -79,7 +98,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location: error_page.php");
     exit;
 }
-
-// References: https://www.w3schools.com/php/func_mail_mail.asp // https://stackoverflow.com/questions/5335273/how-can-i-send-an-email-using-php //
-                
- 
