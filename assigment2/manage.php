@@ -51,14 +51,14 @@
     <div class="EOISdiv">
       <h1>Human Resources Queries</h1>
       <h4>List all EOIs</h4>
-      <form action="processManage.php" method="post">
+      <form action="displayEOI.php" method="post">
         <input type="hidden" name="action" value="displayAllEOIs">
         <?php generateSortFieldDropdown(); ?>
         <input type="submit" value="List All EOIs">
       </form>
 
       <h4>List EOIs by Job Reference Number</h4>
-      <form action="processManage.php" method="post">
+      <form action="displayEOI.php" method="post">
         <input type="hidden" name="action" value="displayEOIsByReferenceNumber">
         <label for="jobreference">Job Reference Number:</label>
         <input placeholder="Job Reference Number:" type="text" id="jobreference" name="jobreference">
@@ -67,7 +67,7 @@
       </form>
 
       <h4>List EOIs by Applicant Name</h4>
-      <form action="processManage.php" method="post">
+      <form action="displayEOI.php" method="post">
         <input type="hidden" name="action" value="displayEOIsByApplicantName">
         <label for="firstname">First Name:</label>
         <input placeholder="First Name:" type="text" id="firstname" name="firstname">
@@ -78,7 +78,7 @@
       </form>
 
       <h4>Delete EOIs by Job Reference Number</h4>
-      <form action="processManage.php" method="post">
+      <form action="displayEOI.php" method="post">
         <input type="hidden" name="action" value="deleteEOIsByReferenceNumber">
         <label for="jobreferencedelete">Job Reference Number:</label>
         <input placeholder="Job Reference Number:" type="text" id="job_reference_delete" name="jobreferencedelete">
@@ -86,7 +86,7 @@
       </form>
 
       <h4>Change EOI Status</h4>
-      <form action="processManage.php" method="post">
+      <form action="displayEOI.php" method="post">
         <input type="hidden" name="action" value="updateEOIStatus">
         <label for="eoiid">EOI ID:</label>
         <input placeholder="EOI ID:" type="text" id="eoiid" name="eoiid">
