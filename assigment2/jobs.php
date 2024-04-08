@@ -10,10 +10,10 @@
 
 <body class="bodycuaminh">
 
-<?php include 'header.inc'; ?>
+    <?php include 'header.inc'; ?>
 
     <section class="section-cm2">
-        <article class="article-cm"> 
+        <article class="article-cm">
             <img src="images/anhdb.jpg" alt="" class="adb">
             <h1 class="h1cm">Position: Database Engineer</h1>
             <p><strong>Reference Number:</strong> ABC123</p>
@@ -22,34 +22,34 @@
             <p><strong>Salary Range:</strong> $80,000 - $100,000 per annum</p>
             <p><strong>Reporting To:</strong> IT Manager</p>
 
-        <h3 class="h3cm">Key Responsibilities:</h3>
-        <ul class="ul-cm">
-            <li class="li-cm">Design and implement efficient database structures</li>
-            <li class="li-cm">Maintain data integrity and security</li>
-            <li class="li-cm">Optimize database performance for seamless operations</li>
-            <li class="li-cm">Collaborate with development teams to integrate databases into applications</li>
-            <li class="li-cm">Identify and troubleshoot database issues</li>
-        </ul> 
+            <h3 class="h3cm">Key Responsibilities:</h3>
+            <ul class="ul-cm">
+                <li class="li-cm">Design and implement efficient database structures</li>
+                <li class="li-cm">Maintain data integrity and security</li>
+                <li class="li-cm">Optimize database performance for seamless operations</li>
+                <li class="li-cm">Collaborate with development teams to integrate databases into applications</li>
+                <li class="li-cm">Identify and troubleshoot database issues</li>
+            </ul>
 
-        <h3 class="h3cm">Qualifications, Skills, Knowledge, and Attributes:</h3>
-        <p><strong>Essential:</strong></p>
-        <ol>
-            <li class="li-cm">Bachelor’s degree in Computer Science or related field</li>
-            <li class="li-cm">Proven experience as a Database Engineer</li>
-            <li class="li-cm">In-depth knowledge of database management systems (e.g., MySQL, Oracle)</li>
-        </ol>
+            <h3 class="h3cm">Qualifications, Skills, Knowledge, and Attributes:</h3>
+            <p><strong>Essential:</strong></p>
+            <ol>
+                <li class="li-cm">Bachelor’s degree in Computer Science or related field</li>
+                <li class="li-cm">Proven experience as a Database Engineer</li>
+                <li class="li-cm">In-depth knowledge of database management systems (e.g., MySQL, Oracle)</li>
+            </ol>
 
-        <p><strong>Preferable:</strong></p>
-        <ul class="ul-cm">
-            <li class="li-cm">Experience with cloud-based databases (e.g., AWS RDS)</li>
-            <li class="li-cm">Understanding of data warehousing concepts</li>
-            <li class="li-cm">Scripting skills (e.g., Python, SQL)</li>
-        </ul>
-        <a href="apply.html" class="apn">Apply Now</a>
+            <p><strong>Preferable:</strong></p>
+            <ul class="ul-cm">
+                <li class="li-cm">Experience with cloud-based databases (e.g., AWS RDS)</li>
+                <li class="li-cm">Understanding of data warehousing concepts</li>
+                <li class="li-cm">Scripting skills (e.g., Python, SQL)</li>
+            </ul>
+            <a href="apply.html" class="apn">Apply Now</a>
         </article>
     </section>
     <section class="section-cm2">
-        <article class="article-cm"> 
+        <article class="article-cm">
             <img src="images/afs.jpeg" alt="" class="afs">
             <h1 class="h1cm">Position: Fullstack Developer</h1>
             <p><strong>Reference Number:</strong> LMN456</p>
@@ -86,7 +86,7 @@
     </section>
 
     <section class="section-cm2">
-        <article class="article-cm"> 
+        <article class="article-cm">
             <img src="images/ahr.jpg" alt="" class="ahr">
             <h1 class="h1cm">Position: HR Director</h1>
             <p><strong>Reference Number:</strong> XYZ789</p>
@@ -136,3 +136,12 @@
 </body>
 
 </html>
+
+<!-- Acknowledgement:
+
+Image sources : 
+https://universityhq.org/how-to-become/database-engineer-careers/
+https://universityhq.org/how-to-become/database-engineer-careers/
+https://hris.emsc.vn/en/nhiem-vu-cua-hr-manager-la-gi-2/ 
+
+ --! >

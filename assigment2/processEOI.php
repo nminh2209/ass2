@@ -98,3 +98,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location: error_page.php");
     exit;
 }
+
+// References: https://www.w3schools.com/php/func_mail_mail.asp // https://stackoverflow.com/questions/5335273/how-can-i-send-an-email-using-php //

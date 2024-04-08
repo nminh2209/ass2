@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +10,26 @@
     <link rel="stylesheet" href="styles/styles.css">
     <title>AMT Technologies</title>
 </head>
+
 <body class="bodycuaan">
-    <?php include 'header.inc'; ?>  
+    <?php include 'header.inc'; ?>
 
     <div id="container-cuaan">
         <div class="section-cuaan">
             <div id="topPhrase">
-              <a class="ytbdemo" href="https://youtu.be/c-rvNyI2DMg" title="YouTubeDemonstration">Propel Your Tech Career to New Heights at AMT Technologies 
-              </a>
-            </div>  
+                <a class="ytbdemo" href="https://www.youtube.com/watch?v=azdFulLFmeA" title="YouTubeDemonstration">Video Assignment 2</a> <br />
+                <a class="ytbdemo" href="https://youtu.be/c-rvNyI2DMg" title="YouTubeDemonstration">Propel Your Tech Career to New Heights at AMT Technologies </a>
+            </div>
         </div>
 
         <div class="section-cuaan yellow">
             <h2 class="subtitle"><em>DARE TO BE BIG</em></h2>
             <div class="midsect">
                 <p>
-                    AMT is a leading provider of innovative IT solutions and services. 
-                    We are passionate about helping businesses leverage the power of technology to achieve their goals. 
-                    We are currently seeking talented and motivated individuals to join our team and help us shape the future of IT. 
-                </p>    
+                    AMT is a leading provider of innovative IT solutions and services.
+                    We are passionate about helping businesses leverage the power of technology to achieve their goals.
+                    We are currently seeking talented and motivated individuals to join our team and help us shape the future of IT.
+                </p>
             </div>
         </div>
     </div>
@@ -44,11 +46,12 @@
                 <li>A collaborative and supportive work environment</li>
                 <li>The chance to work on cutting-edge technology projects</li>
                 <li>Make a real impact on the success of our clients</li>
-            </ul>      
+            </ul>
             <img alt="techguy" class="rightIMG" src="images/ITman.jpg">
         </div>
     </div>
 
     <?php include 'footer.inc'; ?>
 </body>
+
 </html>

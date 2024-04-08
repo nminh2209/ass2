@@ -8,7 +8,7 @@
 </head>
 
 <body class="bodycuatuan2">
-<?php include 'header.inc'; ?>
+  <?php include 'header.inc'; ?>
 
   <img class="anhnhom2" src="images/anhnhom2.jpg" alt="anhnhom2">
 
@@ -38,12 +38,12 @@
             <p class="featured-p-cuatuan">
               Age: 28<br>
               Occupation: Tech Innovator<br><br>
-              
+
               Hello there! I'm Anh Tuan, a passionate tech enthusiast with a knack for innovation. By day, I work as a software engineer, pushing boundaries in the digital world. Outside the coding realm, you'll find me exploring new coffee shops, experimenting with exotic recipes, and indulging in sci-fi novels. My mission is to blend creativity with technology to make a positive impact on the way we experience the digital landscape. Let's connect and dive into the exciting possibilities of tomorrow's tech!</p>
 
-              <form action="images/elon.jpg" method="get">
-                <button type="submit"  class="featured-btn-cuatuan">See More</button>
-                </form>
+            <form action="images/elon.jpg" method="get">
+              <button type="submit" class="featured-btn-cuatuan">See More</button>
+            </form>
           </div>
         </div>
 
@@ -54,13 +54,13 @@
             <p class="featured-p-cuatuan">“It is a capital mistake to theorize before one has data.”</p>
             <p class="featured-p-cuatuan">Age: 30<br>
               Occupation: Full Stack Developer<br><br>
-              
+
               About Me:
               Hey, I'm Hoang Minh, a seasoned full stack developer with a passion for crafting seamless digital experiences. From front-end aesthetics to back-end functionality, I thrive on bringing ideas to life in the virtual realm. When not immersed in coding, you'll find me exploring the latest tech trends, collaborating with diverse teams,enjoying the lovely sunset, travelling across the land, and occasionally indulging in a friendly coding competition. Let's connect and explore the endless possibilities of full stack development!</p>
 
-              <form action="images/billgate.jpg" method="get">
-                <button type="submit"  class="featured-btn-cuatuan">See More</button>
-                </form>
+            <form action="images/billgate.jpg" method="get">
+              <button type="submit" class="featured-btn-cuatuan">See More</button>
+            </form>
           </div>
         </div>
 
@@ -71,12 +71,12 @@
             <p class="featured-p-cuatuan">“We are surrounded by data, but starved for insights.”</p>
             <p class="featured-p-cuatuan">Age: 40<br>
               Occupation: HR Director<br><br>
-              
+
               About Me:
               Hello! I'm Hoang An, an experienced HR Director dedicated to fostering thriving workplace cultures and also actually developing our tech for a more advanced humanity. With a keen eye for talent acquisition, employee development, and strategic HR initiatives, I navigate the human side of organizations with passion and precision. Outside the boardroom, I enjoy mentoring professionals, advocating for diversity and inclusion, and unwinding with a good leadership book. Let's discuss how we can shape a workplace that empowers and inspires.</p>
-              <form action="images/mark.jpg" method="get">
-                <button type="submit"  class="featured-btn-cuatuan">See More</button>
-                </form>
+            <form action="images/mark.jpg" method="get">
+              <button type="submit" class="featured-btn-cuatuan">See More</button>
+            </form>
           </div>
         </div>
       </div>
@@ -84,7 +84,15 @@
   </section>
   <!--cua minh -->
   <?php include 'footer.inc'; ?>
-  
+
 </body>
 
 </html>
+<!-- Acknowledgement:
+
+Image sources : 
+Elon Musk as Doan Phuong Anh Tuan
+Bill Gates as Nguyen Hoang Minh
+Mark Zuckerberg as Le Hoang Gia An
+
+ --! >
