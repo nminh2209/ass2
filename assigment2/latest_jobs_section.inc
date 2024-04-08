@@ -24,7 +24,7 @@
                     Ha Noi
                   </div>
 
-                  <form action="./jobs.html" method="get">
+                  <form action="./jobs.php" method="get">
                     <button type="submit"  class="featured_btn">More Details</button>
                     </form>
                 </div>
@@ -46,7 +46,7 @@
                     <img src="images/location.png" alt="" class="featured_icon" />
                     Da Nang
                   </div>
-                  <form action="./jobs.html" method="get">
+                  <form action="./jobs.php" method="get">
                     <button type="submit"  class="featured_btn">More Details</button>
                     </form>
                 </div>
@@ -69,7 +69,7 @@
                     <img src="images/location.png" alt="" class="featured_icon" />
                     Ho Chi Minh City
                   </div>
-                  <form action="./jobs.html" method="get">
+                  <form action="./jobs.php" method="get">
                   <button type="submit"  class="featured_btn">More Details</button>
                   </form>
                 </div>
